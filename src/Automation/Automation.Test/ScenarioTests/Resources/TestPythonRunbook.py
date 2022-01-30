@@ -1,10 +1,7 @@
 import sys
 
 print("Starting process")
-sum = 0
-
-for i in range(1,len(sys.argv)):
-  sum = sum + int(sys.argv[i])
+sum = sum(int(sys.argv[i]) for i in range(1,len(sys.argv)))
 
 print ("Process completed")
 print(sum)
